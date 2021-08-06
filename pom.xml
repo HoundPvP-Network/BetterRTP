@@ -106,51 +106,24 @@
         </plugins>
     </build>
 
+       <distributionManagement>
+        <repository>
+            <id>hound-nexus</id>
+            <name>Maven Releases</name>
+            <url>https://nexus.houndpvp.com/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>hound-nexus-snapshot</id>
+            <name>Maven Snapshots</name>
+            <url>https://nexus.houndpvp.com/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <repositories>
-        <!-- Github based Repos -->
         <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
-        <!-- Spigot Repo -->
-        <repository>
-            <id>spigot-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
-        </repository>
-        <!-- PaperMC Repo -->
-        <repository>
-            <id>papermc</id>
-            <url>https://papermc.io/repo/repository/maven-public/</url>
-        </repository>
-        <!-- Vault Repo -->
-        <repository>
-            <id>vault-repo</id>
-            <url>http://nexus.hc.to/content/repositories/pub_releases</url>
-        </repository>
-        <!-- Worldguard Repo -->
-        <repository>
-            <id>sk89q-repo</id>
-            <url>https://maven.enginehub.org/repo/</url>
-        </repository>
-        <!-- ProjectRed Repo -->
-        <repository>
-            <id>redprotect-repo</id>
-            <url>https://raw.githubusercontent.com/FabioZumbi12/RedProtect/mvn-repo/</url>
-        </repository>
-        <!-- FactionsUUID Repo -->
-        <repository>
-            <id>factions-uuid</id>
-            <url>http://ci.ender.zone/plugin/repository/everything/</url>
-        </repository>
-        <!-- Residence -->
-        <repository>
-            <id>residence-repo</id>
-            <url>file:${project.basedir}/LocalJars/Residence4.9.1.9.jar</url>
-        </repository>
-        <!-- ProtocolLib Repo -->
-        <repository>
-            <id>dmulloy2-repo</id>
-            <url>https://repo.dmulloy2.net/nexus/repository/public/</url>
+            <id>hound-nexus</id>
+            <name>Hound Master Repo</name>
+            <url>https://nexus.houndpvp.com/repository/Hound_Master_Repo/</url>
         </repository>
     </repositories>
     <dependencies>
